@@ -1,0 +1,12 @@
+<ul class="fashion-list">
+  <li *ngFor="let item of fashionData; let i = index" class="fashion-item">
+    <img class="fashion-image" [src]="item.image" [alt]="item.name" />
+    <div>
+      <h3>{{ item.name }}</h3>
+      <p>Price: ${{ item.price.toFixed(2) }}</p>
+      <button class="delete-button" (click)="deleteFashionItem(i)">
+        Delete
+      </button>
+    </div>
+  </li>
+</ul>
