@@ -16,6 +16,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.fashion-item:hover {
+  transform: scale(1.05);
 }
 
 .fashion-image {
@@ -30,4 +35,11 @@
   border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+
+.delete-button:hover {
+  background-color: #e60000;
+  transform: scale(1.1);
 }
